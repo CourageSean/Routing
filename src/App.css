@@ -1,38 +1,50 @@
 .App {
-  text-align: center;
+  position: relative;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+li {
+  padding: 0px 10px;
+  list-style: none;
+}
+/*=========== Home=======*/
+section {
+  height: 100vh;
+}
+.home-background {
+  height: 60%;
+  background: url("https://s3-alpha-sig.figma.com/img/0bc8/595e/75b47c2ccf8ee4f6b4cdefe8a5b4b349?Expires=1616976000&Signature=ailckpWfXwKi99dkBTd9zJ~AHaJQKlV6Iq3nEnHuxGETDp1fcYv~r7gNTotF0Hybm5BKL-xQTCzZKCFBl1m5l2628-aPum5lZsahiZkCPyVcf1YQ36q5je~VMSYu-EaVArWJ7SJ5D1Czx7PpVGH~gy3uYkAa0uNXSMcpL4zgALdOk7FeCS3syVJtyhBQeCZqFa20F4dMVPTFYI-wZgGaUNF85B9qawlMgtPLL4RosReRFoK5ahdypRe9UC53XU5PIIT9YDL1lu-JFcIiKtx5ojDyswoEHf5w5IyFnTxn4Cak0j7NfyysvK1k42-wHdz9piydsp8CsFPm49thrYLYcw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+  background-size: cover;
+  background-position: cent;
+  background-repeat: no-repeat;
+}
+.home-text {
+  display: grid;
+  place-items: center;
+}
+.blogContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  place-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.blogImg {
+  width: 250px;
+  height: 200px;
 }
